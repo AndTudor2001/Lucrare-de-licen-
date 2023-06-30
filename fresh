@@ -1,0 +1,27 @@
+
+   INFO  Nothing to migrate.  
+
+   INFO  Seeding database.  
+
+  Database\Seeders\UsersTableSeeder .......................................................................... RUNNING  
+
+   Error 
+
+  Call to undefined function Database\Seeders\table()
+
+  at C:\xampp\htdocs\Licenta-ECommerce\m-vendor-ecommerce\database\seeders\UsersTableSeeder.php:17
+     13▕      * @return void
+     14▕      */
+     15▕     public function run()
+     16▕     {
+  ➜  17▕         DB:table('users')->insert([
+     18▕             
+     19▕             //Admin
+     20▕             [
+     21▕                 'name' =>'Admin',
+
+  1   C:\xampp\htdocs\Licenta-ECommerce\m-vendor-ecommerce\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+      Database\Seeders\UsersTableSeeder::run()
+
+  2   C:\xampp\htdocs\Licenta-ECommerce\m-vendor-ecommerce\vendor\laravel\framework\src\Illuminate\Container\Util.php:41
+      Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
